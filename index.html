@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viaje Já | Descubra o Brasil</title>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_1.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_1.svg">
+
+  <!-- APPLE / MOBILE -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_1.svg">
+  <!-- SEO básico -->
+  <meta name="description" content="Viaje Já — descubra destinos, eventos e experiências incríveis pelo Brasil.">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JS -->
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <!-- MODAL DE AUTENTICAÇÃO -->
+<div class="modal" id="authModal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+
+    <h2 id="modalTitle">Entrar no Viaje Já</h2>
+
+  <form id="authForm">
+
+  <input type="email" id="email" placeholder="Email" required>
+
+  <input type="password" id="password" placeholder="Senha" required>
+
+  <div class="register-only">
+
+    <input type="text" id="fullName" placeholder="Nome completo">
+
+    <input type="password" id="confirmPassword" placeholder="Confirmar senha">
+
+    <select>
+      <option value="">Região onde você mora</option>
+      <option>Norte</option>
+      <option>Nordeste</option>
+      <option>Centro-Oeste</option>
+      <option>Sudeste</option>
+      <option>Sul</option>
+    </select>
+
+  </div>
+
+  <p class="form-error" id="formError"></p>
+
+  <button type="submit" class="btn-primary" id="authSubmit">
+    Entrar
+  </button>
+
+</form>
+
+    <p class="modal-switch">
+      <span id="switchText">Não tem conta?</span>
+      <a href="#" id="switchAuth">Cadastre-se</a>
+    </p>
+  </div>
+</div>
+
+  <!-- HEADER -->
+  <header class="header">
+  <div class="container header-content">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo-link">
+      <img src="img/logoVertical_1.svg" alt="Viaje Já" class="logo">
+    </a>
+
+    <!-- NAV -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Experiências</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <!-- AÇÕES -->
+    <div class="header-actions">
+      <button class="btn-login">Entrar</button>
+      <button class="btn-register">Cadastrar</button>
+    </div>
+
+    <!-- MOBILE -->
+    <button class="menu-toggle">☰</button>
+
+  </div>
+</header>
+
+
+  <!-- HERO -->
+  <section class="hero reveal" data-parallax>
+    <div class="container hero-content">
+      <h1>
+        Descubra o melhor do Brasil com o
+        <span>Viaje Já</span>
+      </h1>
+
+      <p>
+        Destinos, eventos, hospedagens e experiências incríveis
+        em um só lugar.
+      </p>
+
+      <a href="destinos.html" class="btn-primary">
+        Explorar destinos
+      </a>
+    </div>
+  </section>
+
+  <!-- DESTINOS EM DESTAQUE -->
+  <section class="section">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <h2 class="section-title">Destinos em destaque</h2>
+      </header>
+
+      <div class="filter reveal">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="sudeste">Sudeste</button>
+        <button class="filter-btn" data-filter="nordeste">Nordeste</button>
+        <button class="filter-btn" data-filter="sul">Sul</button>
+      </div>
+
+      <div class="cards">
+
+        <!-- CARD -->
+        <div class="cards">
+
+  <article class="card reveal" data-category="sudeste">
+    <img src="img/destinos/rio-de-janeiro.jpg" alt="Rio de Janeiro">
+    <div class="card-content">
+      <h3>Rio de Janeiro</h3>
+      <p>Praias, cultura e paisagens únicas.</p>
+    </div>
+  </article>
+
+  <article class="card reveal" data-category="sudeste">
+    <img src="img/destinos/sao-paulo.jpg" alt="São Paulo">
+    <div class="card-content">
+      <h3>São Paulo</h3>
+      <p>Cultura, gastronomia e vida urbana.</p>
+    </div>
+  </article>
+
+  <article class="card reveal" data-category="sul">
+    <img src="img/destinos/gramado.jpg" alt="Gramado">
+    <div class="card-content">
+      <h3>Gramado</h3>
+      <p>Charme europeu e clima aconchegante.</p>
+    </div>
+  </article>
+
+  <article class="card reveal" data-category="sul">
+    <img src="img/destinos/florianopolis.jpg" alt="Florianópolis">
+    <div class="card-content">
+      <h3>Florianópolis</h3>
+      <p>Praias, natureza e qualidade de vida.</p>
+    </div>
+  </article>
+
+  <article class="card reveal" data-category="nordeste">
+    <img src="img/destinos/maceio.jpg" alt="Maceió">
+    <div class="card-content">
+      <h3>Maceió</h3>
+      <p>Mar cristalino e paisagens paradisíacas.</p>
+    </div>
+  </article>
+
+  <article class="card reveal" data-category="nordeste">
+    <img src="img/destinos/salvador.jpg" alt="Salvador">
+    <div class="card-content">
+      <h3>Salvador</h3>
+      <p>História, música e praias incríveis.</p>
+
+</div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta reveal">
+    <div class="container cta-content">
+      <h2>Planeje sua próxima viagem agora</h2>
+      <p>Descubra experiências incríveis pelo Brasil</p>
+
+      <a href="destinos.html" class="btn-secondary">
+        Começar agora
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer reveal">
+    <div class="container footer-content">
+      <p>© 2025 Viaje Já — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>

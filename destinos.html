@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Destinos | Viaje Já</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Explore destinos incríveis pelo Brasil com o Viaje Já.">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JS -->
+  <script defer src="main.js"></script>
+</head>
+<body>
+
+<header class="header reveal">
+  <div class="container header-content">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo-link">
+      <img src="img/logoVertical_1.svg" class="logo" alt="Viaje Já">
+    </a>
+
+    <!-- NAV -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinos.html" class="active">Destinos</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <!-- AÇÕES (necessário mesmo vazio) -->
+    <div class="header-actions"></div>
+
+    <!-- BOTÃO MOBILE -->
+    <button class="menu-toggle">☰</button>
+
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero hero-small reveal">
+  <div class="container hero-content">
+    <h1>Destinos pelo Brasil</h1>
+    <p>Escolha seu próximo destino e comece a planejar sua viagem</p>
+  </div>
+</section>
+
+<!-- FILTROS -->
+<section class="section section-sm">
+  <div class="container">
+
+    <div class="filter reveal">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="sudeste">Sudeste</button>
+      <button class="filter-btn" data-filter="nordeste">Nordeste</button>
+      <button class="filter-btn" data-filter="sul">Sul</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- LISTA DE DESTINOS -->
+<section class="section">
+  <div class="container">
+
+    <div class="cards">
+
+      <!-- CARD -->
+      <article class="card reveal" data-category="sudeste">
+        <span class="card-badge">Sudeste</span>
+        <img src="img/destinos/rio-de-janeiro.jpg" alt="Rio de Janeiro">
+        <div class="card-content">
+          <h3>Rio de Janeiro</h3>
+          <p>Sol, mar, cultura e paisagens icônicas.</p>
+        </div>
+      </article>
+
+      <article class="card reveal" data-category="nordeste">
+        <span class="card-badge">Nordeste</span>
+        <img src="img/destinos/salvador.jpg" alt="Salvador">
+        <div class="card-content">
+          <h3>Salvador</h3>
+          <p>História, música, praias e gastronomia.</p>
+        </div>
+      </article>
+
+      <article class="card reveal" data-category="sul">
+        <span class="card-badge">Sul</span>
+        <img src="img/destinos/gramado.jpg" alt="Gramado">
+        <div class="card-content">
+          <h3>Gramado</h3>
+          <p>Charme europeu e experiências únicas.</p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta reveal">
+  <div class="container cta-content">
+    <h2>Seu próximo destino começa aqui</h2>
+    <p>Descubra lugares incríveis pelo Brasil</p>
+
+    <a href="#" class="btn-secondary">
+      Ver eventos próximos
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer reveal">
+  <div class="container footer-content">
+    <p>© 2025 Viaje Já — Todos os direitos reservados</p>
+  </div>
+</footer>
+
+</body>
+</html>
