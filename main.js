@@ -230,9 +230,3 @@ document.addEventListener("DOMContentLoaded", () => {
     updateHeaderUser(storedUser.name);
   }
 });
-
-window.addEventListener("scroll", () => {
-  document
-    .querySelector(".header")
-    .classList.toggle("scrolled", window.scrollY > 20);
-});
