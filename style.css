@@ -69,6 +69,12 @@ a {
   object-fit: contain;
 }
 
+.header.scrolled {
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.9);
+}
+
+
 /* =====================
    NAV
 ===================== */
@@ -216,6 +222,22 @@ a {
 .hero-content p {
   margin-bottom: 24px;
 }
+
+.hero-content {
+  animation: heroFade 1s ease-out forwards;
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .btn-primary {
   background: var(--orange);
